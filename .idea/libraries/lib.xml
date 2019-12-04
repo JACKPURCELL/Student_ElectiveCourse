@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.base.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.controls.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.web.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.swing.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.graphics.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.media.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx-swt.jar!/" />
+      <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-13.0.1/lib/javafx.fxml.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
