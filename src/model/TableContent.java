@@ -11,7 +11,7 @@ public class TableContent {
         this.setClassroom(Classroom);
     }
 
-    private StringProperty CourseName;  //也可以在这里直接new
+    private StringProperty CourseName;
 
     public void setCourseName(String value) {
         CourseNameProperty().set(value);
@@ -26,7 +26,7 @@ public class TableContent {
         return CourseName;
     }
 
-    private StringProperty TeacherName;  //也可以在这里直接new
+    private StringProperty TeacherName;
 
     public void setTeacherName(String value) {
         TeacherNameProperty().set(value);
@@ -38,10 +38,10 @@ public class TableContent {
 
     public StringProperty TeacherNameProperty() {
         if (TeacherName == null) TeacherName = new SimpleStringProperty(this, "TeacherName");
-        return TeacherName;
+            return TeacherName;
     }
 
-    private StringProperty Classroom;  //也可以在这里直接new
+    private StringProperty Classroom;
 
     public void setClassroom(String value) {
         ClassroomProperty().set(value);
@@ -53,6 +53,6 @@ public class TableContent {
 
     public StringProperty ClassroomProperty() {
         if (Classroom == null) Classroom = new SimpleStringProperty(this, "Classroom");
-        return Classroom;
+            return Classroom;
     }
 }

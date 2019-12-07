@@ -13,11 +13,55 @@ public class Search {
     public static int couindex[] = new int[100];
     public static int teaindex[] = new int[100];
     public static int coursenum;//The number of Classes of a student
-    Myfile f2 = new Myfile(new File("Student.txt"));
-    Myfile f3 = new Myfile(new File("Teacher.txt"));
-    Myfile f4 = new Myfile(new File("Course.txt"));
-    Myfile f5 = new Myfile(new File("Schedule.txt"));
-    Myfile f6 = new Myfile(new File("Electivecourse.txt"));
+    public static Myfile f2;
+    static {
+        try {
+            f2 = new Myfile(new File("Student.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Myfile f3;
+
+    static {
+        try {
+            f3 = new Myfile(new File("Teacher.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Myfile f4;
+
+    static {
+        try {
+            f4 = new Myfile(new File("Course.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Myfile f5;
+
+    static {
+        try {
+            f5 = new Myfile(new File("Schedule.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Myfile f6;
+
+    static {
+        try {
+            f6 = new Myfile(new File("Electivecourse.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static Student[] studentlist = new Student[100];
     public static Teacher[] teacherlist = new Teacher[100];
     public static Course[] courselist = new Course[100];
@@ -142,6 +186,16 @@ public class Search {
         f5.readFile(schedulelist);
         f6.readFile(electivecourselist);
     }
+
+    public void writeOneData() throws IOException, ClassNotFoundException {
+        //Read
+        f2.readFile(studentlist);
+        f3.readFile(teacherlist);
+        f4.readFile(courselist);
+        f5.readFile(schedulelist);
+        f6.readFile(electivecourselist);
+    }
+
 
 //    public static void main(String[] args) throws IOException, ClassNotFoundException { // Declare and Construct an instance of the Circle class
 //

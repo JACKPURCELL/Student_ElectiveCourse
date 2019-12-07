@@ -2,26 +2,58 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
-      <Button fx:id="write" layoutX="42.0" layoutY="46.0" mnemonicParsing="false" onAction="#writebutton" text="Write data to File" />
-      <Button fx:id="read" layoutX="34.0" layoutY="131.0" mnemonicParsing="false" onAction="#readbutton" text="Read data from File" />
-      <TableView fx:id="table" layoutX="2.0" layoutY="206.0" prefHeight="332.0" prefWidth="523.0">
+      <Button fx:id="write" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#writebutton" text="Write data to File" />
+      <Button fx:id="read" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#readbutton" text="Read data from File" />
+      <TableView fx:id="table" layoutY="343.0" prefHeight="292.0" prefWidth="637.0">
         <columns>
-          <TableColumn fx:id="cname" prefWidth="178.0" text="Coursename" />
-          <TableColumn fx:id="name" prefWidth="182.0" text="TeacherName" />
-            <TableColumn fx:id="classroom" minWidth="0.0" prefWidth="162.0" text="Classroom" />
+          <TableColumn fx:id="cname" prefWidth="238.0" text="Coursename" />
+          <TableColumn fx:id="name" prefWidth="222.0" text="TeacherName" />
+            <TableColumn fx:id="classroom" minWidth="0.0" prefWidth="176.0" text="Classroom" />
         </columns>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TableView>
-      <Button fx:id="submit" layoutX="419.0" layoutY="91.0" mnemonicParsing="false" onAction="#submitbutton" text="Submit" />
-      <TextField fx:id="input" layoutX="214.0" layoutY="94.0" promptText="Please Input the Sid" />
+      <Button fx:id="submit" layoutX="435.0" layoutY="41.0" mnemonicParsing="false" onAction="#submitbutton" text="Submit" />
+      <TextField fx:id="input" layoutX="237.0" layoutY="41.0" promptText="Please Input the Sid" />
+      <Button fx:id="wstudent" layoutX="215.0" layoutY="138.0" mnemonicParsing="false" onAction="#wstudent" text="WriteOneData" />
+      <TextField fx:id="instudent" layoutX="25.0" layoutY="138.0" />
+      <TextField fx:id="incourse" layoutX="26.0" layoutY="302.0" />
+      <TextField fx:id="inteacher" layoutX="25.0" layoutY="224.0" />
+      <TextField fx:id="inschedule" layoutX="334.0" layoutY="172.0" />
+      <TextField fx:id="inelect" layoutX="334.0" layoutY="279.0" />
+      <Button fx:id="wteacher" layoutX="218.0" layoutY="224.0" mnemonicParsing="false" onAction="#wteacher" text="WriteOneData" />
+      <Button fx:id="wcourse" layoutX="218.0" layoutY="302.0" mnemonicParsing="false" onAction="#wcourse" text="WriteOneData" />
+      <Button fx:id="wschedule" layoutX="525.0" layoutY="172.0" mnemonicParsing="false" onAction="#wschedule" text="WriteOneData" />
+      <Button fx:id="welect" layoutX="525.0" layoutY="279.0" mnemonicParsing="false" onAction="#welect" text="WriteOneData" />
+      <Label layoutX="24.0" layoutY="185.0" text="Teacher:tid;name;sex;age;title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="106.0" text="Student:sid;name;sex;age;major">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="274.0" text="Course:cname;cid;chour">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="143.0" text="Schedule:classid;cid;tid;classroom">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="255.0" text="Electivecourse:elid;sid;classid" />
    </children>
 </Pane>
