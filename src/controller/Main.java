@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../view/view.fxml"));
-        Scene scene = new Scene(root,635,637);//修改了
+        Scene scene = new Scene(root,635,637);
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);//设置不能窗口改变大小
